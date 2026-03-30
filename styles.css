@@ -1,0 +1,305 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #0b1220;
+  color: #e5e7eb;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+.logo {
+  color: #34d399;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  position: relative;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+.hero {
+  height: 20em;
+  background: radial-gradient(circle at top #0f172a, #020617);
+}
+
+.hero-container {
+  text-align: center;
+  margin-top: 3em;
+}
+
+.intro {
+  color: #34d399;
+  margin-bottom: 10px;
+}
+.hero-container h2 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.descricao {
+  color: #34d399;
+}
+
+#sobre {
+  height: 30em;
+  padding: 1em;
+}
+
+#sobre h2 {
+  color: #34d399;
+  text-align: center;
+}
+
+.sobre-conteudo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.sobre-conteudo .sobre-texto {
+  flex: 1;
+}
+
+.sobre-conteudo .sobre-formacao {
+  flex: 1;
+}
+
+.sobre-texto p {
+  color: #9ca3af;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.sobre-dados {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.sobre-dados div {
+  text-align: center;
+}
+.sobre-dados strong {
+  display: block;
+  font-size: 2em;
+  color: #34d399;
+}
+
+.sobre-dados span {
+  font-size: 1em;
+  color: #9ca3af;
+}
+
+#projetos {
+  min-height: 100vh;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.projetos-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.projeto-card {
+  background: #020617;
+  padding: 15px;
+  border-radius: 10px;
+  width: 300px;
+  flex: 0 0 auto;
+}
+
+.projeto-card img {
+  object-fit: contain;
+  object-position: center;
+}
+
+#projetos h2 {
+  color: #34d399;
+  margin-bottom: 10px;
+}
+
+.projeto-card p {
+  color: #9ca3af;
+  margin: 25px 10px;
+}
+
+.projeto-card a {
+  color: #34d399;
+  font-weight: bold;
+  border: 2px solid #34d399;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#habilidades {
+  min-height: 50vh;
+  text-align: center;
+}
+
+#habilidades p {
+  color: #9ca3af;
+  margin: 10px;
+}
+.habilidades-lista {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+.habilidades-card {
+  background-color: #020617;
+  border-radius: 10px;
+  padding: 25px 20px;
+}
+
+.habilidades-card:hover {
+  border: 1px solid #34d399;
+}
+
+.habilidades-card span {
+  padding: 5px 14px;
+  border-radius: 10px;
+  background: #020617;
+  border: 1px solid #34d399;
+  color: #34d399;
+  font-size: 0.7em;
+}
+.habilidades-card h3 {
+  margin-bottom: 10px;
+}
+
+#contato {
+  min-height: 90vh;
+  text-align: center;
+  padding: 1em;
+}
+
+#contato h2 {
+  color: #34d399;
+  margin-bottom: 20px;
+}
+
+#contato p {
+  color: #9ca3af;
+  margin-bottom: 15px;
+}
+
+.contatos-lista {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  margin: 20px auto;
+  padding: 0;
+}
+
+.contato-item {
+  background: #020617;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #34d399;
+  margin-bottom: 0;
+  width: 50px 100pxt;
+  text-align: center;
+  margin: 0;
+  flex: 0 0 auto;
+}
+
+.contato-item strong {
+  color: #34d399;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contato-item span {
+  color: #9ca3af;
+  font-size: 0.7em;
+}
+
+.redes-sociais {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .redes-sociais {
+    flex-direction: column;
+  }
+}
+
+.redes-sociais a {
+  border: 1px solid #34d399;
+  border-radius: 10px;
+  color: #34d399;
+  padding: 10px 20px;
+}
+
+.redes-sociais a:hover {
+  color: #020617;
+  background-color: #10b981;
+}
+
+.footer {
+  color: #9ca3af;
+  text-align: center;
+  background-color: #020617;
+  padding: 20px;
+}
+
+#hamburguer {
+  display: none;
+  font-size: 20px;
+  background: none;
+  cursor: pointer;
+  color: #fff;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  #hamburguer {
+    display: block;
+  }
+
+  .menu {
+    position: absolute;
+    top: 50px;
+    left: 40px;
+    gap: 15px;
+    background: #111;
+    flex-direction: row;
+    display: none;
+  }
+
+  .menu.ativa {
+    display: flex;
+  }
+}

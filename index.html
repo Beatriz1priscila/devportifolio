@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="navbar">
+        <h3 class="logo">DevPortifólio</h3>
+        <button id="hamburguer">☰</button>
+        <ul class="menu" id="menu">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="hero-container">
+        <p class="intro">Olá, eu sou</p>
+        <h2>Desenvolvedor FrontEnd</h2>
+        <p class="descricao">Criando experiências digitais com código</p>
+      </div>
+    </header>
+    <section id="sobre">
+      <h2>Sobre Mim</h2>
+      <div class="sobre-conteudo">
+     
+     <div class="sobre-texto"> 
+        <p>Olá! Meu nome é Priscila Beatriz, tenho 23 anos e sou estudante de Análise e Desenvolvimento de Sistemas. Atualmente, estou no meu terceiro semestre e estou muito animada com o que estou aprendendo. Tenho interesse em desenvolvimento web e estou sempre buscando novos desafios para aprimorar minhas habilidades.</p>
+      <p>Estou criando experiência com desenvolvimento full stack, utilizando Java para a lógica de back-end e HTML e CSS para a criação de interfaces modernas e responsivas. </p>
+    </div>
+      <div class="sobre-dados">
+        <div>
+          <strong>3+</strong>
+          <span>Projetos concluídos</span>
+        </div>
+
+        <div>
+          <strong>1+</strong>
+          <span>Ano(s) de experiência</span>
+        </div>
+        <div>
+          <strong>3+</strong>
+          <span>Tecnologias</span>
+        </div>
+      </div>
+    </section>
+  </div>
+  <section id="projetos">
+<h2>Meus Projetos</h2>
+<div class="projetos-container">
+<div class="projeto-card"><img src="jogo da velha.png" alt="" width="280px">
+<h2>Jogo da velha</h2>
+<p>Meu primeiro projeto utilizando Java Script</p>
+<a href="https://j8zq3s.csb.app/" target="_blank">Ver Projeto</a>
+</div>
+
+<div class="projeto-card"><img src="tbbt.png" alt="" width="280px">
+  <h2>Gerador de frases</h2>
+  <p>Frases da famosa série The Big Bang Theory. Utilizando HTML, CSS e JAVASCRIPT</p>
+  <a href="https://tz3cpj.csb.app/" target="_blank">Ver Projeto</a>
+  </div>
+  <div class="projeto-card"><img src="pizzaria.png" alt="" width="280px">
+    <h2>Menu de uma pizzaria</h2>
+    <p>Site simples de pedido de pizza, onde utilizei, HTML, CSS e JAVASCRIPT</p>
+    <a href="https://4nhhgm.csb.app/#salgadas" target="_blank">Ver Projeto</a>
+    </div></div>
+  </section>
+  <section id="habilidades">
+    <h2>Habilidades Tecnicas</h2>
+    <p>Tecnologias das ferramentas que utilizo para desenvolver
+      soluções 
+      completas.
+    </p>
+    <div class="habilidades-lista">
+      <div class="habilidades-card">
+        <h3>HTML</h3>
+        <span>Intermediário</span>
+      </div>
+      <div class="habilidades-card">
+        <h3>CSS</h3>
+        <span>Intermediário</span>
+      </div>
+      <div class="habilidades-card">
+        <h3>Java Script</h3>
+        <span>Intermediário</span>
+      </div>
+    </div>
+  </section>
+  <section id="contato">
+    <h2>Entre em contato</h2>
+  <p>Tem algum projetos em mente ou quer trocar uma ideia? Estou sempre aberta a novas oportunidades.</p>
+
+<div class="contatos-lista">
+<div class="contato-item">
+  <a href="mailto:priscilabesouza@gmail.com"></a>
+  <strong>Email:</strong>
+<span>priscilabesouza@gmail.com</span></div>
+
+<div class="contato-item">
+ <a href="tel:47997137367"></a> 
+  <strong>Telefone:</strong>
+<span>(47) 9.9713-7367</span></div>
+
+<div class="contato-item">
+    <strong>Localização:</strong>
+<span>Itapema-SC</span></div>
+</div>
+<div class="redes-sociais">
+  <a href="https://github.com/Beatriz1priscila" target="_blank">GitHub</a>
+
+  <a href="https://www.instagram.com/souza__priscila?utm_source=qr&igsh=OGJxZ2NmcHQ5ejl5" target="_blank">Instagran</a>
+
+  <a href="https://www.linkedin.com/in/priscila-beatriz-813b6b190/" target="_blank">LinkedIn</a>
+</div>
+
+</section>
+
+<footer class="footer">
+  <p>@ 2026 DevPortifólio</p>
+</footer>
+
+<script>
+  let button = document.getElementById("hamburguer");
+  const menu = document.getElementById("menu");
+
+button.addEventListener("click", function (){
+  menu.classList.toggle("ativa");
+});
+</script>
+  </body>
+</html>
